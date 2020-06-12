@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Testing Bootstrap</title>
+        <meta name="viewport" content="width=device-width initail-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+        <style>
+            #bodycolor{
+                background-color: lightgray;
+            }
+            #gallery{
+                width: 100%;
+                height: 300px;
+            }
+            #bottom{
+                background-color: green;
+            }
+            .col-sm-3{
+                text-align: center;
+                padding:30px;
+                font-size: 20px;
+            }
+            .col-sm-4{
+                padding: 10px;
+            }
+            p{
+                text-align:left;
+                padding:10px;
+
+            }
+            .name{
+                text-align: right;
+                font-weight: bold;
+                font-size: medium;
+            }
+            h5{
+                color:white;
+            }
+            .carousel{
+                    background: #2f4357;
+                    
+             }
+             .carousel-item{
+              text-align: center;
+              min-height: 300px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+             }
+             .bs-example{
+                    margin-top:0px;
+             }  
+             .card{
+                width:400px; 
+                margin: 20px; 
+                float:right;
+                background-color: black;
+                opacity: 70%;
+             }
+             .card-body{
+                 text-align: left;
+                 color:white;
+             }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm ">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <img src="logo.png" width=100px height=50px style="padding: 10px;">   
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">CONTACT US</a>
+                        </li>
+                      </ul>
+        
+
+                </div>
+                           
+              </nav>
+        </div>
+        <div id="gallery">
+            <div class="container-fluid">
+                <div class="bs-example">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="background-image: url(bg.png); background-size: 100% 300px;">
+                                <div class="card">
+                                    <div class="card-body">
+                                       <h4 class="card-title">SPEND YOUR HOLIDAY</h4>
+                                       <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                       <a href="#" class="btn btn-danger">Learn more</a>
+                                    </div>
+                               </div>
+                             </div>
+                            <div class="carousel-item " style="background-image: url(bg.jpg); background-size: 100% 300px;">
+                               
+                            </div>
+                            <div class="carousel-item " style="background-image: url(bg1.png); background-size: 100% 300px;">
+                                
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="bodycolor">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                         <i class="fa fa-plug"  style="font-size: 50px;"></i><br><br>
+                         <font style="color:red"> Rent Direct from the Owner</font>
+                    </div>
+                    <div class="col-sm-3">
+                         <i class="fa fa-money"  style="font-size: 50px;"></i><br><br>
+                         <font style="color:red"> No Commission</font>
+                    </div>
+                    <div class="col-sm-3">
+                         <i class="fa fa-calendar"  style="font-size: 50px;"></i><br><br>
+                         <font style="color:red"> Flexible Rental Date</font>
+                    </div>
+                    <div class="col-sm-3">
+                         <i class="fa fa-low-vision"  style="font-size: 50px;"></i><br><br>
+                         <font style="color:red"> Space & privacy</font> 
+                     </div>
+                 </div>
+             </div>
+        </div>
+      
+        <div class="container">
+            <center> <h4> TOP HOLIDAY DESTINATION </h4></center> <br>
+            <div class="place">
+                <button type="button" class="btn btn-success"> Omaha Beach</button>
+                <button type="button" class="btn btn-success"> Lake Wanaka</button>
+                <button type="button" class="btn btn-success"> Mangawhai Heads</button>
+                <button type="button" class="btn btn-success"> Taupo Central</button>     
+            </div>
+            <div class="row" style="clear:both">
+                <div class="col-sm-4"> 
+                   <img src="image1.jpg" width="300px" height="300px">
+                </div>
+                <div class="col-sm-4"> 
+                    <img src="image2.jpeg" width="300px" height="300px">
+                </div>
+                <div class="col-sm-4"> 
+                    <img src="image3.jpeg" width="300px" height="300px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"> 
+                    <img src="image4.jpg" width="300px" height="300px">
+                </div>
+                <div class="col-sm-4"> 
+                    <img src="image5.jpg" width="300px" height="300px">
+                </div>
+                <div class="col-sm-4"> 
+                    <img src="image6.jpg" width="300px" height="300px">
+                </div>
+            </div>
+        </div>
+        <div id="bodycolor">
+            <div class="container">
+                <center> <h4> TESTIMONIAL</h4></center><br>
+                <div class=row>
+                    <div class="col-sm-4">
+                        <center><img src="person1.jpg" width="100px" height="100px" style="border-radius: 50%;"> </center><br>
+                        <p> This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. 
+                            This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment.  </p><br>
+                        <p class="name"> Kim Ji Won </p>
+    
+                    </div>
+                    <div class="col-sm-4">
+                        <center><img src="person1.jpg" width="100px" height="100px" style="border-radius: 50%;"></center><br>
+                        <p> This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. 
+                            This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment.  </p><br>
+                        <p class="name"> Kim Ji Won </p>
+                        
+                    </div>
+                    <div class="col-sm-4">
+                       <center> <img src="person1.jpg" width="100px" height="100px" style="border-radius: 50%;"></center><br>
+                        <p> This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. 
+                            This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment.  </p><br>
+                        <p class="name"> Kim Ji Won </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div id="bottom"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4"> 
+                        <h5> ABOUT</h5><br>
+                        <p> This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. 
+                            This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment. This is bootstrap assignment.  </p><br>
+                    </div>
+                    <div class="col-sm-4"> 
+                        <h5> USEFUL ADVICE</h5><br>
+                        <ul style="list-style: none;">
+                            <li> LAW SUPPORT</li>
+                            <li> INSURANCE</li>
+                            <li> PARTY DECORATION</li>
+                            <li> PARTANER PROGRAM</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4"> 
+                        <h5> GET IN TOUCH</h5><br>
+                        <form> 
+                            <input type="text" placeholder="Name" id="fname" size="42"> <br><br>
+                            <input type="text" placeholder="Email" id="fname" size="42"> <br><br>
+                            <textarea name="message" Placeholder="Message" rows= 5 cols=45></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        Holiday home rent &copy; 2016<br>
+                        All rights reserved, Terms of use | Privacy Policy
+                    </div>
+                    <div class="col-sm-4">
+                        <i class="fa fa-twitter" style="font-size:20px; color:white; padding: 10px;"> </i>
+                        <i class="fa fa-facebook" style="font-size:20px; color:white; padding: 10px;"> </i>
+                        <i class="fa fa-tumblr" style="font-size:20px; color:white; padding: 10px;"> </i>
+                        <i class="fa fa-wifi" style="font-size:20px; color:white; padding: 10px;"> </i>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-danger"> Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
